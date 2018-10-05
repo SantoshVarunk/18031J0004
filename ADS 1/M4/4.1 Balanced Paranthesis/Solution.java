@@ -45,7 +45,7 @@ class Solution
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		int N=sc.nextInt();
+		String N=sc.nextLine();
 		//Stack st=new Stack(N);
 		char r;
 		int count=0;
