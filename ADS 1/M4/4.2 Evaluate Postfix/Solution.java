@@ -32,7 +32,7 @@ int sol=0;
 					st.push(e);
 					
 				}
-				System.out.println(sol);
+				//System.out.println(sol);
 			}
 				
 		System.out.println(sol);
