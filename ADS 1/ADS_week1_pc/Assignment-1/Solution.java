@@ -157,6 +157,7 @@ class AddLargeNumbers {
     	int b=qDigits.popend();
     	
     	int c=a+b+e;
+    	e=0;
     	if(i==len1-1)
     	{
     		if(e!=0)
@@ -190,6 +191,7 @@ class AddLargeNumbers {
     	int b=qDigits.popend();
     	//System.out.println(a+" ..."+b);
     	int c=a+b+e;
+    	e=0;
     	if(i==len2-1)
     	{
     		if(e!=0)
