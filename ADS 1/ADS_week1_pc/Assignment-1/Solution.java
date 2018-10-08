@@ -1,4 +1,3 @@
-
 import java.util.LinkedList;
 import java.util.Scanner;
 class Node1
@@ -177,6 +176,10 @@ class AddLargeNumbers {
     		two.addFirst(c);
     	} 
     	}
+    		if(e!=0)
+    		{
+    			two.addFirst(e);
+    		}
     		return two;
     	
     		}
