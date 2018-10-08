@@ -55,12 +55,15 @@ class list
 		Node1 temp=Head;
 		if(Head==null)
 		{
-			return 0;
+			int c=0;
+			return c;
 		}
+		else
+		{
 		if(temp.next==null)
 		{
 			int b=temp.data;
-			temp=null;
+			Head=null;
 			return b;
 		}
 		else
@@ -73,6 +76,7 @@ class list
 			int a=temp.next.data;
 			temp.next=null;
 			return a;
+		}
 		}
 		
 		
@@ -146,10 +150,11 @@ class AddLargeNumbers {
     	if(len1>=len2)
     	{
 
-    		for(int i=0;i<=len1;i++)
+    		for(int i=0;i<len1;i++)
     		{
     	int a=pDigits.popend();
     	int b=qDigits.popend();
+    	
     	int c=a+b+e;
     	if(c>9)
     	{
@@ -171,11 +176,12 @@ class AddLargeNumbers {
     	
     	else
     	{
-    		for(int i=0;i<=len2;i++)
+    		for(int i=0;i<len2;i++)
     		{
     	int a=pDigits.popend();
     	int b=qDigits.popend();
-    	int c=a+b+d;
+    	System.out.println(a+" ..."+b);
+    	int c=a+b+e;
     	if(c>9)
     	{
     		d = c%10;
