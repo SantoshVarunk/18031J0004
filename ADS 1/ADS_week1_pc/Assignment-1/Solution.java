@@ -52,19 +52,26 @@ class list
 	public int popend()
 	{
 		size--;
+		Node1 temp=Head;
 		if(Head==null)
 		{
 			return 0;
 		}
+		if(temp.next==null)
+		{
+			int b=temp.data;
+			temp=null;
+			return b;
+		}
 		else
 		{
-			Node1 temp=Head;
-			while(temp.next!=null)
+			//Node1 temp=Head;
+			while(temp.next.next!=null)
 			{
 				temp=temp.next;
 			}
-			int a=temp.data;
-			temp=null;
+			int a=temp.next.data;
+			temp.next=null;
 			return a;
 		}
 		
@@ -154,6 +161,7 @@ class AddLargeNumbers {
     	{
     		d=0;
     		e=0;
+    		two.addFirst(c);
     	} 
     	}
     		return two;
@@ -178,6 +186,7 @@ class AddLargeNumbers {
     	{
     		d=0;
     		e=0;
+    		two.addFirst(c);
     	} 
     	}
     		return two;
