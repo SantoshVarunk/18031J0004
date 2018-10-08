@@ -1,3 +1,4 @@
+
 import java.util.LinkedList;
 import java.util.Scanner;
 class Node1
@@ -156,6 +157,13 @@ class AddLargeNumbers {
     	int b=qDigits.popend();
     	
     	int c=a+b+e;
+    	if(i==len1-1)
+    	{
+    		if(e!=0)
+    		{
+    			two.addFirst(e);
+    		}
+    	}
     	if(c>9)
     	{
     		d = c%10;
@@ -180,8 +188,15 @@ class AddLargeNumbers {
     		{
     	int a=pDigits.popend();
     	int b=qDigits.popend();
-    	//System.out.println(a+" ..."+b);
+    	System.out.println(a+" ..."+b);
     	int c=a+b+e;
+    	if(i==len2-1)
+    	{
+    		if(e!=0)
+    		{
+    			two.addFirst(e);
+    		}
+    	}
     	if(c>9)
     	{
     		d = c%10;
@@ -194,6 +209,7 @@ class AddLargeNumbers {
     		e=0;
     		two.addFirst(c);
     	} 
+    	
     	}
     		return two;
     	}
