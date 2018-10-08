@@ -157,7 +157,7 @@ class AddLargeNumbers {
     	int b=qDigits.popend();
     	
     	int c=a+b+e;
-    	e=0;
+    
     	if(i==len1-1)
     	{
     		if(e!=0)
