@@ -1,5 +1,3 @@
-package ADS;
-
 import java.util.LinkedList;
 import java.util.Scanner;
 class Node1
@@ -61,12 +59,12 @@ class list
 		else
 		{
 			Node1 temp=Head;
-			while(temp.next.next!=null)
+			while(temp.next!=null)
 			{
 				temp=temp.next;
 			}
-			int a=temp.next.data;
-			temp.next=null;
+			int a=temp.data;
+			temp=null;
 			return a;
 		}
 		
@@ -135,29 +133,53 @@ class AddLargeNumbers {
     public static list addLargeNumbers(list pDigits, list qDigits) {
     	int len1=pDigits.size;
     	int len2=qDigits.size;
+    	int d=0;
+    	int e=0;
     	list two=new list();
     	if(len1>=len2)
     	{
+
     		for(int i=0;i<=len1;i++)
     		{
     	int a=pDigits.popend();
     	int b=qDigits.popend();
-    	int c=a+b;
-    	two.addFirst(c);
+    	int c=a+b+e;
+    	if(c>9)
+    	{
+    		d = c%10;
+    		e=c/10;
+    		two.addFirst(d);
+    	}
+    	else
+    	{
+    		d=0;
+    		e=0;
+    	} 
+    	}
+    		return two;
     	
     		}
-    		return two;
-    	}
+    		
+    	
     	else
     	{
     		for(int i=0;i<=len2;i++)
     		{
     	int a=pDigits.popend();
     	int b=qDigits.popend();
-    	int c=a+b;
-    	two.addFirst(c);
-    
-    		}
+    	int c=a+b+d;
+    	if(c>9)
+    	{
+    		d = c%10;
+    		e=c/10;
+    		two.addFirst(d);
+    	}
+    	else
+    	{
+    		d=0;
+    		e=0;
+    	} 
+    	}
     		return two;
     	}
 		
