@@ -1,0 +1,44 @@
+ACTIVITY 4
+(a) 0 1 2 3 4 5 6 7 8 9
+ A  TRUE
+(b) 4 6 8 7 5 3 2 9 0 1 
+ A  False
+(c) 2 5 6 7 4 8 9 3 1 0
+ A  False
+(d) 4 3 2 1 0 5 6 7 8 9
+ A  False
+
+
+
+ACTIVITY 5
+
+What does the following code fragment do to the queue q?
+Stack stack = new Stack();
+
+while (!q.isEmpty())
+
+stack.push(q.dequeue());
+
+while (!stack.isEmpty())
+
+q.enqueue(stack.pop());
+
+
+
+Example
+Queue=[1,2,3,4,5]
+Stack PUSH Operation (until Queue equal to empty)
+Stack=[1]
+Stack=[1,2]
+Stack=[1,2,3]
+Stack=[1,2,3,4]
+Stack=[1,2,3,4,5]
+Queue Empty
+
+Queue Enqueue Operation (until Stack equal to empty)
+Queue=[5]
+Queue=[5,4]
+Queue=[5,4,3]
+Queue=[5,4,3,2]
+Queue=[5,4,3,2,1]
+Stack empty
