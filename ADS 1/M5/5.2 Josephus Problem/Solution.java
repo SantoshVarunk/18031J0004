@@ -98,6 +98,8 @@ public class Solution {
         q1.add(l);
         	while (q1.front != null)
             System.out.print(q1.remove() + " ");
+        	System.out.println("");
     }
+        
     }
 }
