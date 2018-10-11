@@ -1,5 +1,3 @@
-package ADS;
-
 import java.io.*;
 import java.util.Scanner;
 class Node<T> {
