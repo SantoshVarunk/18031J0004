@@ -94,13 +94,11 @@ public class Solution {
             q1.add(l);
             k++;
         }
-        
+        l=q.remove();
+        q1.add(l);
         	while (q1.front != null)
             System.out.print(q1.remove() + " ");
-        	l=q.remove();
-            q1.add(l);
-            System.out.print(q1.remove());
-            System.out.println("");
+        	System.out.println("");
     }
         
     }
