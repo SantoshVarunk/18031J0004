@@ -24,15 +24,6 @@ class Stack<T> {
         top = top.link;
         return item;
     }
-    public void display() {
-        Node<T> n = top;
-        System.out.print("(top)");
-        while (n != null) {
-            System.out.print(" ->" + n.value);
-            n = n.link;
-        }
-        System.out.println();
-    }
 }
 
 // Queue---------------------------
@@ -56,18 +47,8 @@ class Queue<T> {
         front = s2.top;
         return item;
     }
-    public void display() {
-        Node<T> n = s2.top;
-        System.out.print("(front)");
-        while (n != null) {
-            System.out.print(" <-" + n.value);
-            n = n.link;
-        }
-        System.out.println(" <-(rear)");
-    }
+    
 }
-
-// Josephus Problem-------------------
 public class Solution {
     public static void main(String[] args) throws IOException {
         
@@ -99,9 +80,8 @@ public class Solution {
             System.out.print(q1.remove() + " ");
         	l=q.remove();
             q1.add(l);
-            System.out.print(q1.remove());
+            System.out.println(q1.remove());
             System.out.println("");
     }
-        
     }
 }
