@@ -80,7 +80,7 @@ public class Solution {
             System.out.print(q1.remove() + " ");
         	l=q.remove();
             q1.add(l);
-            System.out.println(q1.remove());
+            System.out.print(q1.remove());
             System.out.println("");
     }
     }
