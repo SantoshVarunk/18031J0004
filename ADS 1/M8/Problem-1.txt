@@ -1,0 +1,109 @@
+selection sort sorts the array E A S Y Q U E S T I O N.
+
+A E S Y Q U E S T I O N
+A E S Y Q U E S T I O N
+A E E Y Q U S S T I O N
+A E E I Q U S S T Y O N
+A E E I N U S S T Y O Q
+A E E I N O S S T Y U Q
+A E E I N O Q S T Y U S
+A E E I N O Q S T Y U S
+A E E I N O Q S S Y U T
+A E E I N O Q S S T U Y
+A E E I N O Q S S T U Y
+
+
+
+Insertion sort sorts the array E A S Y Q U E S T I O N.
+
+A E S Y Q U E S T I O N
+A E S Y Q U E S T I O N
+A E S Y Q U E S T I O N
+A E Q S Y U E S T I O N
+A E Q S U Y E S T I O N
+A E E Q S U Y S T I O N
+A E E Q S S U Y T I O N
+A E E Q S S T U Y I O N
+A E E I Q S S T U Y O N
+A E E I O Q S S T U Y N
+A E E I N O Q S S T U Y 
+
+
+public class Selection { 
+
+public static void sort(Comparable[] a) {
+
+int N = 10;    //Blank 1
+
+for (int i = 0; i < N; i++) { 
+
+Int min = i;    //Blank 2
+
+for (int j = i+1; j < N; j++) 
+
+if (less(a[j], a[min])) 
+
+min = j; //Blank3
+
+exch(a, i, min);     //Blank4
+
+}
+
+ }
+
+ }
+
+
+
+
+
+
+Activity-7
+
+
+
+If a = {3, 6, 4, 2, 1, 0} is the input for below code
+
+public class Insertion { 
+
+public static void sort(Comparable[] a) { 	
+
+int N = a.length; 
+
+for (int i = 1; i < N; i++) { 
+
+for (int j = i; j > 0 && less(a[ j ], a[j-1]); j--) 
+
+exch(a, j, j-1); 
+
+} 
+
+}
+
+}
+
+}
+
+
+Answer the following questions
+
+Note: while writing answers use the following notation [1, 2, 3, 4]
+
+	
+
+	Print the elements in the array a, after completion of 2nd iteration of loop i
+
+	
+		[1,2,3,6,4,0]
+	
+
+Print the elements in the array a, in 3rd iteration of i and after completion of 2nd iteration of loop j
+
+		[1,2,3,0,6,4]
+
+
+Print the elements in the array a, in 4th iteration of i and after completion of 1st iteration of loop j
+	[0,1,2,3,4,6]
+
+
+Answer: [3, 4, 6, 2, 1, 0]
