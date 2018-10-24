@@ -126,7 +126,7 @@ public void reverse(int a)
 	return s;
 }
 }
-class Sorted
+class Solution
 {
 	public static void main(String args[])
 	{
