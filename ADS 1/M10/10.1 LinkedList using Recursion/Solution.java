@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Node
@@ -42,11 +41,10 @@ public void insertAt(int a,int b,int c)
 	else
 	{	
 		Node temp =Head;
-	if(count+1!=a)
+	while(count+1!=a)
 	{
 		temp=temp.next;
 		count++;
-		insertAt(a, b,count);
 	}
 	
 	n.next=temp.next;
@@ -143,7 +141,7 @@ public void reverse(int a)
 //		System.out.println(size+" "+i);
 //		
 //		System.out.println(size+" "+i);
-		if(i+1!=size)
+		if(i!=size)
 		{
 			int b=popend();
 			insertAt(i,b,0);
