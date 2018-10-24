@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 class Node
@@ -53,6 +54,52 @@ public void insertAt(int a,int b,int c)
 	}
 		}
 	size++;
+}
+public void insertAta(int a,int b,int c)
+{
+	
+	Node n=new Node(b);
+	int count=c;
+	
+	if(a>size+1||a<0)
+	{
+		System.out.println("Can't insert at this position.");
+	}
+	else
+		{if(Head==null)
+	{
+		Head=n;
+	}
+	else if(a==0)
+	{
+		n.next=Head;
+		Head=n;
+		size++;
+	}
+	else
+	{	
+		Node t =Head;
+		ins(t,a,b,count,n);
+	}
+		}}
+	
+	
+	
+void	ins(Node temp,int a,int b,int count,Node n)
+	{
+		if(temp!=null && count<a-1)
+		{temp=temp.next;
+		count++;
+		ins(temp,a,b,count,n);
+	}
+		else
+		{
+	n.next=temp.next;
+	temp.next=n;
+	
+		
+	size++;
+		}
 }
 public int popend()
 {
@@ -141,7 +188,7 @@ class Solution
 			{
 			case "insertAt":
 				
-				l.insertAt(Integer.parseInt(b[1]), Integer.parseInt(b[2]),0);
+				l.insertAta(Integer.parseInt(b[1]), Integer.parseInt(b[2]),0);
 				if(Integer.parseInt(b[1])>=0&&Integer.parseInt(b[1])<=l.size)
 				l.Disp();
 				break;
