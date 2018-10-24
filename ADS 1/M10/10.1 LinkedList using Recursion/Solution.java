@@ -14,7 +14,6 @@ class list
 {
 	int size=0;
 	Node Head;
-	Node temp1 =Head;
 	list()
 	{
 		Head=null;
@@ -41,52 +40,16 @@ public void insertAt(int a,int b,int c)
 	}
 	else
 	{	
-		//Node temp =Head;
+		Node temp =Head;
 	if(count+1!=a)
 	{
-		temp1=temp1.next;
+		temp=temp.next;
 		count++;
 		insertAt(a, b,count);
 	}
 	
-	n.next=temp1.next;
-	temp1.next=n;
-	}
-		}
-	size++;
-}
-public void insertAta(int a,int b,int c)
-{
-	
-	Node n=new Node(b);
-	int count=c;
-	
-	if(a>size+1||a<0)
-	{
-		System.out.println("Can't insert at this position.");
-	}
-	else
-		{if(Head==null)
-	{
-		Head=n;
-	}
-	else if(a==0)
-	{
-		n.next=Head;
-		Head=n;
-	}
-	else
-	{	
-		//Node temp =Head;
-	if(count+1!=a)
-	{
-		temp1=temp1.next;
-		count++;
-		insertAt(a, b,count);
-	}
-	
-	n.next=temp1.next;
-	temp1.next=n;
+	n.next=temp.next;
+	temp.next=n;
 	}
 		}
 	size++;
