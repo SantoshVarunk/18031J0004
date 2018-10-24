@@ -117,7 +117,7 @@ public void reverse(int a)
 	{
 	while(temp1.next!=null)
 	{
-		System.out.print(temp1.data+",");
+		System.out.print(temp1.data+", ");
 		temp1=temp1.next;
 		
 	}
